@@ -80,3 +80,14 @@ h2 {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.checkUncheck {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkUncheck button {
+    padding: 10px;
+    width: 140px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}

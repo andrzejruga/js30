@@ -40,25 +40,17 @@ function toggleDone(e) {
     populateList(items, itemsList);
 }
 
-function checkAll(e) {
+function checkAll() {
     items.forEach(box => {
-        if (box.done = true) {
-            return;
-        } else {
-            box.done = true;
-        }
+        box.done = true;
     });
     localStorage.setItem('items', JSON.stringify(items));
     populateList(items, itemsList);
 }
 
-function uncheckAll(e) {
+function uncheckAll() {
     items.forEach(box => {
-        if (box.done = true) {
-            box.done = false;
-        } else {
-            return;
-        }
+        box.done = false;
     });
     localStorage.setItem('items', JSON.stringify(items));
     populateList(items, itemsList);
